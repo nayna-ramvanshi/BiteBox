@@ -1,71 +1,177 @@
-        <form action="#" method="post">
-        <h3>Customer Information</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <img src="assets/images/logo.png" alt="BiteBox Logo" width="150">
+        <nav>
+            <!-- Navigation -->
+            <a href="index.html">Home</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-        <label for="fullname">Full Name</label>
-        <input type="text" class="fullname" id="fullname">
+    <!-- Cart Hero Section -->
+    <section id="cart-hero">
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" class="email" placeholder="Enter Your Email Address">
-        
-        <label for="password">Password</label>
-        <input type="password" id="password" class="password">
+        <div class="hero-content">
+        <h2>Your Shopping Cart</h2>
+        <p>
+            Review your selected food items before
+            proceeding to checkout.
+        </p>
+        <hr>
+        <p>
+            Update quantities, remove items, and confirm
+            your order with ease.
+        </p>
+        </div>
+    </section>
 
-        <label for="phone">Phone Number</label>
-        <br>
-        <input type="tel" id="phone" class="phone">
-        <br><br>
+    <!-- Shopping Cart Section -->
+    <section id="cart-details">
+        <section id="shopping-cart">
 
-        <h3>Order Information</h3>
-        <label for="quality">Quantity</label>
-        <br>
-        <input type="number" class="quality" id="quality">
-        <br><br>
+            <table>
+                <thead>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </thead>
 
-        <label for="deliveryDate">Preferred Delivery Date</label>
-        <br>
-        <input type="date" id="deliveryDate" class="deliveryDate">
-        <br><br>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="assets/images/pizza.png" alt="Margarita Pizza" width="80">
+                            <h3>Margherita Pizza</h3>
+                            <p>Classic delight with fresh cheese & basil.</p>
+                        </td>
 
-        <label for="food">Select Food Item</label>
-        <select name="food" id="food">
-            <option value="">Veg Pizza</option>
-            <option value="">Cheese Burger</option>
-            <option value="">White Sauce Pasta</option>
-            <option value="">Veg Grilled Sandwich</option>
-            <option value="">Chocolate Brownie</option>
-        </select>
+                        <td>₹249</td>
 
-        <h3>Payment Method</h3>
-        <input type="radio" id="cash" name="payment" >
-        <label for="cash">Cash</label>
-        <br>
+                        <td>
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                       </td>
 
-        <input type="radio" id="card" name="payment">
-        <label for="card">Card</label>
-        <br>
+                       <td>₹249</td>
 
-        <input type="radio" id="upi" name="payment">
-        <label for="upi">UPI</label>
+                       <td>
+                        <a href="#">
+                            <img src="assets/icons/delete.png" alt="Delete" width="25">
+                        </a>
+                       </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <h3>Extras</h3>
-        <input type="checkbox" id="cheese" name="extras">
-        <label for="cheese">Extra Cheese</label>
-        <br>
+        <aside id="order-summary">
+            <h2>Order Summary</h2>
 
-        <input type="checkbox" id="drink" name="extras">
-        <label for="drink">Cold Drink</label>
-        <br>
+            <p><span>Subtotal (1 Items)</span> <span>₹249.00</span></p>
+            <p><span>Delivery Charges</span> <span>₹40</span></p>
+            <p><span>Packaging Charges</span> <span>₹20</span></p>
+            <hr>
+            <h3><span>Total Amount</span> <span>309</span></h3>
 
-        <input type="checkbox" id="dessert" name="extras">
-        <label for="dessert">Dessert</label>
-        <br><br>
+            <button type="button">Proceed to Checkout</button>
 
-        <h3>Delivery Instructions</h3>
-        <label for="address">Delivery Address</label>
-        <br>
-        <textarea name="address" id="address" rows="5" cols="40"></textarea>
-        <br><br>
+            <p>
+                <img src="assets/images/" alt="" width="18" height="18"> Secure Checkout
+            </p>
+        </aside>
+    </section>
+    
+    <!-- Cart Action Buttons -->
+    <section id="cart-actions">
 
-        <input type="submit" value="Place Order">
-        <input type="reset" value="Clear Form">
-    </form>
+        <a href="menu.html">
+            <img src="assets/images/" alt="" width="18" height="18">
+            Continue Shopping
+        </a>
+
+        <button type="button"><img src="assets/icons/" alt=""></button>
+
+        <button type="button">
+            <img src="assets/icons/delete.png" width="18" height="18"> Clear Cart
+        </button>
+
+
+    </section>
+
+
+    <footer>
+    <!-- Footer Logo Section -->
+    <section>
+        <img src="assets/images/logo.png" alt="BiteBox Logo" width="180">
+        <p>
+            Delicious food delivered to your doorstep.
+            Fresh, fast and tasty!
+        </p>
+
+        <a href="#"><img src="" alt="Facebook" width="35" height="35"></a>
+        <a href="#"><img src="" alt="Instagram" width="35" height="35"></a>
+        <a href="#"><img src="" alt="Twitter" width="35" height="35"></a>
+        <a href="#"><img src="" alt="YouTube" width="35" height="35"></a>
+    </section>
+
+    <!-- Quick Links -->
+    <section>
+        <h3></h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu/a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="care.html">Care</a></li>
+        </ul>
+    </section>
+    <hr>
+    <!-- Customer Service Section -->
+    <section>
+        <h3>Customer Service</h3>
+        <ul>
+            <li>Track Order</li>
+            <li>FAQs</li>
+            <li>Shipping Policy</li>
+            <li>Return Policy</li>
+            <li>Terms & Conditions</li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- Contact Info -->
+    <section>  
+        <h3>Contact US</h3>
+        <p>📞 Phone :  +91 98765 43210 </p>
+        <p>✉ Email : contact@bitebox.com</p>
+        <p>📍 123 Food Street, Mumbai, Maharashtra 400001</p>
+    </section>
+    <hr>
+
+    <section>
+        <h3>Payment Methods</h3>
+        <img src="assets/images/visa.png" alt="Visa" width="60">
+        <img src="assets/images/mastercard.png" alt="MasterCard" width="60">
+        <img src="assets/images/upi.png" alt="UPI" width="60">
+        <img src="assets/images/paytm.png"  alt="Paytm" width="60">
+    </section>
+    <hr>
+
+    <p>@ 2026 BiteBox</p>
+    </footer>
+    
+</body>
+</html>
