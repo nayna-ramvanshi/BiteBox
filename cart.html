@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <a href="menu.html">Menu</a> |
             <a href="about.html">About</a> |
             <a href="contact.html">Contact</a> |
-            <a href="cart.html">Cart</a>
+            <a href="cart.html"><img src="assets/icons/cart.png" alt="Cart"></a>
         </nav>
     </header>
 
@@ -52,27 +53,82 @@
                 <tbody>
                     <tr>
                         <td>
-                            <img src="assets/images/pizza.png" alt="Margarita Pizza" width="80">
-                            <h3>Margherita Pizza</h3>
-                            <p>Classic delight with fresh cheese & basil.</p>
+                            <div class="cart-item">
+                            <img src="assets/images/pizza.png" alt="Margherita Pizza" width="80">
+                                <div>
+                                    <h3>Margherita Pizza</h3>
+                                    <p>Classic delight with fresh cheese & basil.</p>
+                                </div>
+                            </div>
                         </td>
-
-                        <td>₹249</td>
-
-                        <td>
+                    <td>₹249</td>
+                    <td>
+                        <div class="quantity-box">
                             <button>-</button>
                             <span>1</span>
                             <button>+</button>
-                       </td>
-
-                       <td>₹249</td>
-
-                       <td>
+                        </div>
+                    </td>
+                    <td>₹249</td>
+                    <td>
                         <a href="#">
                             <img src="assets/icons/delete.png" alt="Delete" width="25">
                         </a>
-                       </td>
+                    </td>
                     </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-item">
+                            <img src="assets/images/pasta.png" alt="Margherita Pizza" width="80">
+                                <div>
+                                    <h3>Margherita Pizza</h3>
+                                    <p>Classic delight with fresh cheese & basil.</p>
+                                </div>
+                            </div>
+                        </td>
+                    <td>₹249</td>
+                    <td>
+                        <div class="quantity-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹199</td>
+                    <td>
+                        <a href="#">
+                            <img src="assets/icons/delete.png" alt="Delete" width="25">
+                        </a>
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-item">
+                            <img src="assets/images/burger.png" alt="Margherita Pizza" width="80">
+                                <div>
+                                    <h3>Margherita Pizza</h3>
+                                    <p>Classic delight with fresh cheese & basil.</p>
+                                </div>
+                            </div>
+                        </td>
+                    <td>₹189</td>
+                    <td>
+                        <div class="quantity-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>₹189</td>
+                    <td>
+                        <a href="#">
+                            <img src="assets/icons/delete.png" alt="Delete" width="25">
+                        </a>
+                    </td>
+                    </tr>
+                    
                 </tbody>
             </table>
         </section>
@@ -89,7 +145,7 @@
             <button type="button">Proceed to Checkout</button>
 
             <p>
-                <img src="assets/images/" alt="" width="18" height="18"> Secure Checkout
+                <img src="assets/icons/sequre.png" alt="" width="18" height="18"> Secure Checkout
             </p>
         </aside>
     </section>
@@ -98,11 +154,9 @@
     <section id="cart-actions">
 
         <a href="menu.html">
-            <img src="assets/images/" alt="" width="18" height="18">
+            <img src="assets/icons/arrow.png" alt="" width="50" height="18">
             Continue Shopping
         </a>
-
-        <button type="button"><img src="assets/icons/" alt=""></button>
 
         <button type="button">
             <img src="assets/icons/delete.png" width="18" height="18"> Clear Cart
@@ -121,10 +175,10 @@
             Fresh, fast and tasty!
         </p>
 
-        <a href="#"><img src="" alt="Facebook" width="35" height="35"></a>
-        <a href="#"><img src="" alt="Instagram" width="35" height="35"></a>
-        <a href="#"><img src="" alt="Twitter" width="35" height="35"></a>
-        <a href="#"><img src="" alt="YouTube" width="35" height="35"></a>
+        <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" width="35" height="35"></a>
+        <a href="#"><img src="assets/icons/ig.png" alt="Instagram" width="35" height="35"></a>
+        <a href="#"><img src="assets/icons/tweet.png" alt="Twitter" width="35" height="35"></a>
+        <a href="#"><img src="assets/icons/yt.png" alt="YouTube" width="35" height="35"></a>
     </section>
 
     <!-- Quick Links -->
@@ -163,10 +217,10 @@
 
     <section>
         <h3>Payment Methods</h3>
-        <img src="assets/images/visa.png" alt="Visa" width="60">
-        <img src="assets/images/mastercard.png" alt="MasterCard" width="60">
-        <img src="assets/images/upi.png" alt="UPI" width="60">
-        <img src="assets/images/paytm.png"  alt="Paytm" width="60">
+        <img src="assets/icons/visa.png" alt="Visa" width="60">
+        <img src="assets/icons/mastercard.png" alt="MasterCard" width="60">
+        <img src="assets/icons/upi.png" alt="UPI" width="60" height="50">
+        <img src="assets/icons/paytm.png"  alt="Paytm" width="60">
     </section>
     <hr>
 
